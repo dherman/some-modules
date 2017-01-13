@@ -1,0 +1,11 @@
+<!doctype html>
+
+<body>
+<textarea id="answer" style="width: 100%; font-size: 120%;"></textarea>
+
+<script type=module>
+  import { foo, bar } from "http://some-modules.surge.sh/a.js";
+  import { baz, quux } from "http://some-modules.surge.sh/b.js";
+  document.getElementById("answer").innerHTML = JSON.stringify({ foo: foo, bar: bar, baz: baz, quux: quux });
+</script>
+</body>
